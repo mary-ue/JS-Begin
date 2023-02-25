@@ -23,11 +23,11 @@ removeTaskOnName('Задача 1', tasks);
 console.log(tasks);
 
 let tasks2 = ['1', '2', '3']
-function transferTasktoStart(task, arr) {
+function transferTaskToStart(task, arr) {
   let taskIndex = arr.indexOf(task);
   if (taskIndex === -1) return;
   let transferedTask = arr.splice(taskIndex, 1)[0];
   arr.unshift(transferedTask);
 }
-transferTasktoStart(5, tasks2);
+transferTaskToStart(5, tasks2);
 console.log(tasks2)
